@@ -16,8 +16,7 @@ import {
   Users,
   BookOpenCheck,
   ArrowRight,
-  MonitorSmartphone,
-  Facebook
+  MonitorSmartphone
 } from 'lucide-react';
 
 // تعريف أيقونة لينكدإن يدوياً
@@ -40,8 +39,26 @@ const Linkedin = ({ size = 24, strokeWidth = 2, className = "" }) => (
   </svg>
 );
 
+// تعريف أيقونة الفيسبوك يدوياً لتجنب مشاكل المكتبة
+const Facebook = ({ size = 24, strokeWidth = 2, className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+);
+
 const WHATSAPP_URL =
-  'https://wa.me/201006534067?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D9%85%D8%B1%D9%83%D8%B2%20%D8%A5%D8%B7%D9%84%D8%A7%D9%84%D8%A9';
+  'https://wa.me/201006534067?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D8%AE%D8%AF%D9%85%D8%A7%20%D9%85%D8%B1%D9%83%D8%B2%20%D8%A5%D8%B7%D9%84%D8%A7%D9%84%D8%A9';
 
 const socials = [
   {
@@ -76,7 +93,7 @@ const socials = [
   },
 ];
 
-// تم تحديث الخدمات بناءً على ملف "إطلالة.pdf"
+// الخدمات
 const services = [
   {
     number: '01',
