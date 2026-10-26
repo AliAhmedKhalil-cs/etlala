@@ -16,7 +16,8 @@ import {
   Users,
   BookOpenCheck,
   ArrowRight,
-  MonitorSmartphone
+  MonitorSmartphone,
+  Facebook
 } from 'lucide-react';
 
 // تعريف أيقونة لينكدإن يدوياً
@@ -43,6 +44,12 @@ const WHATSAPP_URL =
   'https://wa.me/201006534067?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D9%85%D8%B1%D9%83%D8%B2%20%D8%A5%D8%B7%D9%84%D8%A7%D9%84%D8%A9';
 
 const socials = [
+  {
+    name: 'Facebook',
+    handle: 'Follow our page',
+    href: 'https://www.facebook.com/profile.php?id=100063690365460',
+    Icon: Facebook,
+  },
   {
     name: 'LinkedIn',
     handle: 'Connect professionally',
